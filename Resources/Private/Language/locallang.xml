@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the FormulaEnergy extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_formulaenergy_domain_model_formulas">Energy formulas added by users</label>
+			<label index="tx_formulaenergy_domain_model_formulas.energyformula">The formula wich is insert by user</label>
+			<label index="tx_formulaenergy_domain_model_formulas.gender">Ther gender from the person</label>
+			<label index="tx_formulaenergy_domain_model_formulas.firstname">Firstname from the person</label>
+			<label index="tx_formulaenergy_domain_model_formulas.lastname">Lastname from the person</label>
+			<label index="tx_formulaenergy_domain_model_formulas.companyname">Companyname</label>
+			<label index="tx_formulaenergy_domain_model_formulas.streetnumber">The name of the street and house number</label>
+			<label index="tx_formulaenergy_domain_model_formulas.zipcity">The name of the city and zip number</label>
+			<label index="tx_formulaenergy_domain_model_formulas.email">The user´s email</label>
+			<label index="tx_formulaenergy_domain_model_formulas.agbchecked">User has checked the agb</label>
+			<label index="tx_formulaenergy_domain_model_formulas.hide">is the data hidden</label>
+			<label index="tx_formulaenergy_domain_model_formulas.cookie">i like cookies</label>
+			<label index="tx_formulaenergy_domain_model_formulas.ipnumber">The ip number</label>
+			<label index="tx_formulaenergy_domain_model_formulas.votes">All votes given in month of publishing</label>
+			<label index="tx_formulaenergy_domain_model_formulas.finalvotes">Final votes, who will win</label>
+			<label index="tx_formulaenergy_domain_model_usercheck">Checks the user like cia</label>
+			<label index="tx_formulaenergy_domain_model_usercheck.ipnumber">Users ip number</label>
+			<label index="tx_formulaenergy_domain_model_usercheck.cookie">more cookies</label>
+		</languageKey>
+	</data>
+</T3locallang>

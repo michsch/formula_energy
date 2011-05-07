@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'formula_energy'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_formulaenergy_domain_model_formulas">Formulas</label>
+			<label index="tx_formulaenergy_domain_model_formulas.energyformula">Energyformula</label>
+			<label index="tx_formulaenergy_domain_model_formulas.gender">Gender</label>
+			<label index="tx_formulaenergy_domain_model_formulas.firstname">Firstname</label>
+			<label index="tx_formulaenergy_domain_model_formulas.lastname">Lastname</label>
+			<label index="tx_formulaenergy_domain_model_formulas.companyname">Companyname</label>
+			<label index="tx_formulaenergy_domain_model_formulas.streetnumber">Streetnumber</label>
+			<label index="tx_formulaenergy_domain_model_formulas.zipcity">Zipcity</label>
+			<label index="tx_formulaenergy_domain_model_formulas.email">Email</label>
+			<label index="tx_formulaenergy_domain_model_formulas.agbchecked">Agbchecked</label>
+			<label index="tx_formulaenergy_domain_model_formulas.hide">Hide</label>
+			<label index="tx_formulaenergy_domain_model_formulas.cookie">Cookie</label>
+			<label index="tx_formulaenergy_domain_model_formulas.ipnumber">Ipnumber</label>
+			<label index="tx_formulaenergy_domain_model_formulas.votes">Votes</label>
+			<label index="tx_formulaenergy_domain_model_formulas.finalvotes">Finalvotes</label>
+			<label index="tx_formulaenergy_domain_model_usercheck">Usercheck</label>
+			<label index="tx_formulaenergy_domain_model_usercheck.ipnumber">Ipnumber</label>
+			<label index="tx_formulaenergy_domain_model_usercheck.cookie">Cookie</label>
+		</languageKey>
+	</data>
+</T3locallang>
