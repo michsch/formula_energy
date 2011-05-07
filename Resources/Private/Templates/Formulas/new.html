@@ -1,0 +1,63 @@
+<f:layout name="default" />
+
+<f:section name="content">
+	<f:render partial="formErrors" arguments="{for: 'newFormulas'}" />
+	<f:form method="post" controller="Formulas" action="create" name="newFormulas" object="{newFormulas}">
+
+		<fieldset>
+			<div class="row type-text">
+				<label for="formula"><f:translate key="formula" /></label>
+				<f:form.textarea property="formula" rows="8" cols="46" />
+			</div>
+
+			<div class="row type-check">
+				<label for="gender"></label>
+				<f:form.radio property="gender" value="0" checked="{gender}==0"/><f:translate key="man" />
+				<f:form.radio property="gender" value="1" checked="{gender}==1"/><f:translate key="woman" />
+			</div>
+
+			<div class="row type-text">
+				<label for="firstname"><f:translate key="firstname" /></label>
+				<f:form.textbox property="firstname" />
+			</div>
+
+			<div class="row type-text">
+				<label for="lastname"><f:translate key="lastname" /></label>
+				<f:form.textbox property="lastname" />
+			</div>
+
+			<div class="row type-text">
+				<label for="companyname"><f:translate key="companyname" /></label>
+				<f:form.textbox property="companyname" />
+			</div>
+			<div class="row type-text">
+				<label for="street"><f:translate key="street" /></label>
+				<f:form.textbox property="street" />
+			</div>
+
+			<div class="row type-text">
+				<label for="housenumber"><f:translate key="housenumber" /></label>
+				<f:form.textbox property="housenumber" />
+			</div>
+
+			<div class="row type-text">
+				<label for="zip"><f:translate key="zip" /></label>
+				<f:form.textbox property="zip" />
+			</div>
+
+			<div class="row type-text">
+				<label for="city"><f:translate key="city" /></label>
+				<f:form.textbox property="city" />
+			</div>
+
+			<div class="row type-text">
+				<label for="email"><f:translate key="email" /></label>
+				<f:form.textbox property="email" />
+			</div>
+
+		</fieldset>
+		<f:form.hidden property="hide" value="1" />
+		<f:form.submit class="submit" value="Submit"/>
+	</f:form>
+
+</f:section>

@@ -4,8 +4,7 @@ if (!defined ('TYPO3_MODE')){
 }
 
 
-
-
+Tx_Extbase_Utility_Extension::registerPlugin ($_EXTKEY, 'Pi1', 'Formula energy' );
 t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'FormulaEnergy');
 
 

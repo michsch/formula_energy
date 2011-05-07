@@ -1,0 +1,29 @@
+<f:layout name="default" />
+
+<f:section name="content">
+	<p>
+		<f:translate key="now_decide" />
+	</p>
+
+	<f:if condition="{formulas}">
+		<f:then>
+			<dl>
+				<f:for each="{formulas}" as="formula">
+					<div class="formula" style="background:green; float:left; margin:10px; width:150px; height:150px;">
+						<p>{formula.formula}</p>
+						<p>{formula.firstname} {formula.lastname}, {formula.city}</p>
+						<f:link.action action="vote" controller="Formulas" arguments="{votes : vote.doLike}">
+							<f:translate key="i_like" />
+						</f:link.action>
+						<f:link.action action="vote" controller="Formulas" arguments="{dontLike : dontLike}">
+							<f:translate key="dont_like" />
+						</f:link.action>
+					</div>
+
+				</f:for>
+				<div style="clear:both;"></div>
+			</dl>
+		</f:then>
+
+	</f:if>
+</f:section>

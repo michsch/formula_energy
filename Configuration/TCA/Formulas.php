@@ -6,10 +6,10 @@ if (!defined ('TYPO3_MODE')) {
 $TCA['tx_formulaenergy_domain_model_formulas'] = array(
 	'ctrl' => $TCA['tx_formulaenergy_domain_model_formulas']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList'	=> 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, energyformula, gender, firstname, lastname, companyname, streetnumber, zipcity, email, agbchecked, hide, cookie, ipnumber, votes, finalvotes',
+		'showRecordFieldList'	=> 'sys_language_uid, l10n_parent, l10n_diffsource, hide, energyformula, gender, firstname, lastname, companyname, streetnumber, zipcity, email, agbchecked, cookie, ipnumber, votes, finalvotes',
 	),
 	'types' => array(
-		'1' => array('showitem'	=> 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, energyformula, gender, firstname, lastname, companyname, streetnumber, zipcity, email, agbchecked, hide, cookie, ipnumber, votes, finalvotes,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
+		'1' => array('showitem'	=> 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hide, energyformula, gender, firstname, lastname, companyname, streetnumber, zipcity, email, agbchecked, hide, cookie, ipnumber, votes, finalvotes,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem'	=> ''),
@@ -52,13 +52,6 @@ $TCA['tx_formulaenergy_domain_model_formulas'] = array(
 			'config'		=> array(
 				'type'		=>'none',
 				'cols'		=> 27,
-			),
-		),
-		'hidden' => array(
-			'exclude'	=> 1,
-			'label'		=> 'LLL:EXT:lang/locallang_general.xml:LGL.hidden',
-			'config'	=> array(
-				'type'	=> 'check',
 			),
 		),
 		'starttime' => array(
@@ -105,8 +98,11 @@ $TCA['tx_formulaenergy_domain_model_formulas'] = array(
 			'exclude'	=> 1,
 			'label'		=> 'LLL:EXT:formula_energy/Resources/Private/Language/locallang_db.xml:tx_formulaenergy_domain_model_formulas.gender',
 			'config'	=> array(
-				'type' => 'check',
-				'default' => 0
+				'type' => 'radio',
+				'items' => array (
+					array("LLL:EXT:formula_energy/Resources/Private/Language/locallang_db.xml:tx_formulaenergy_domain_model_formulas.gender.man",0),
+					array("LLL:EXT:formula_energy/Resources/Private/Language/locallang_db.xml:tx_formulaenergy_domain_model_formulas.gender.woman",1),
+				),
 			),
 		),
 		'firstname' => array(

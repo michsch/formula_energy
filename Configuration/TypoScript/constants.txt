@@ -1,0 +1,8 @@
+plugin.tx_formulaenergy {
+
+	persistence {
+		 # cat=plugin.tx_formulaenergy//a; type=int+; label=Default storage PID
+		storagePid = 15
+	}
+
+}

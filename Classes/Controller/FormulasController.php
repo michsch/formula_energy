@@ -3,7 +3,7 @@
 *  Copyright notice
 *
 *  (c) 2011 Thorsten Mueller <info@immer-quer-durch.de>, QuerDurch
-*  	
+*
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -32,10 +32,10 @@
  */
 
 class Tx_FormulaEnergy_Controller_FormulasController extends Tx_Extbase_MVC_Controller_ActionController {
-	
+
 	/**
 	 * formulasRepository
-	 * 
+	 *
 	 * @var Tx_FormulaEnergy_Domain_Repository_FormulasRepository
 	 */
 	protected $formulasRepository;
@@ -48,9 +48,9 @@ class Tx_FormulaEnergy_Controller_FormulasController extends Tx_Extbase_MVC_Cont
 	protected function initializeAction() {
 		$this->formulasRepository = t3lib_div::makeInstance('Tx_FormulaEnergy_Domain_Repository_FormulasRepository');
 	}
-	
-	
-		
+
+
+
 	/**
 	 * Displays all Formulas
 	 *
@@ -58,11 +58,11 @@ class Tx_FormulaEnergy_Controller_FormulasController extends Tx_Extbase_MVC_Cont
 	 */
 	public function listAction() {
 		$formulas = $this->formulasRepository->findAll();
-		
+
 		$this->view->assign('formulas', $formulas);
 	}
-	
-		
+
+
 	/**
 	 * Displays a single Formulas
 	 *
@@ -72,8 +72,8 @@ class Tx_FormulaEnergy_Controller_FormulasController extends Tx_Extbase_MVC_Cont
 	public function showAction(Tx_FormulaEnergy_Domain_Model_Formulas $formulas) {
 		$this->view->assign('formulas', $formulas);
 	}
-	
-		
+
+
 	/**
 	 * Creates a new Formulas and forwards to the list action.
 	 *
@@ -84,8 +84,8 @@ class Tx_FormulaEnergy_Controller_FormulasController extends Tx_Extbase_MVC_Cont
 	public function newAction(Tx_FormulaEnergy_Domain_Model_Formulas $newFormulas = NULL) {
 		$this->view->assign('newFormulas', $newFormulas);
 	}
-	
-		
+
+
 	/**
 	 * Creates a new Formulas and forwards to the list action.
 	 *
@@ -94,24 +94,22 @@ class Tx_FormulaEnergy_Controller_FormulasController extends Tx_Extbase_MVC_Cont
 	 */
 	public function createAction(Tx_FormulaEnergy_Domain_Model_Formulas $newFormulas) {
 		$this->formulasRepository->add($newFormulas);
-		$this->flashMessageContainer->add('Your new Formulas was created.');
-		
-		$this->redirect('list');
+		$this->view->assign('newFormulas', $newFormulas);
 	}
-	
-		
-	
+
+
+
 	/**
 	 * Updates an existing Formulas and forwards to the index action afterwards.
 	 *
 	 * @param Tx_FormulaEnergy_Domain_Model_Formulas $formulas the Formulas to display
-	 * @return string A form to edit a Formulas 
+	 * @return string A form to edit a Formulas
 	 */
 	public function editAction(Tx_FormulaEnergy_Domain_Model_Formulas $formulas) {
 		$this->view->assign('formulas', $formulas);
 	}
-	
-		
+
+
 
 	/**
 	 * Updates an existing Formulas and forwards to the list action afterwards.
@@ -123,8 +121,8 @@ class Tx_FormulaEnergy_Controller_FormulasController extends Tx_Extbase_MVC_Cont
 		$this->flashMessageContainer->add('Your Formulas was updated.');
 		$this->redirect('list');
 	}
-	
-		
+
+
 			/**
 	 * Deletes an existing Formulas
 	 *
@@ -136,7 +134,7 @@ class Tx_FormulaEnergy_Controller_FormulasController extends Tx_Extbase_MVC_Cont
 		$this->flashMessageContainer->add('Your Formulas was removed.');
 		$this->redirect('list');
 	}
-	
+
 
 }
 ?>
