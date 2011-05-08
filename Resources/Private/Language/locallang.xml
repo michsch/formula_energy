@@ -25,17 +25,15 @@
 			<label index="tx_formulaenergy_domain_model_usercheck.ipnumber">Users ip number</label>
 			<label index="tx_formulaenergy_domain_model_usercheck.cookie">more cookies</label>
 
-<label index="formula">Enter your formula (max. 150 chars)</label>
+			<label index="formula">Enter your formula (max. 150 chars)</label>
 			<label index="gender">Gender</label>
 			<label index="man">Man</label>
 			<label index="woman">Woman</label>
 			<label index="firstname">Firstname</label>
 			<label index="lastname">Lastname</label>
 			<label index="companyname">Companyname</label>
-			<label index="street">Street</label>
-			<label index="housenumber">Nr.</label>
-			<label index="zip">ZIP</label>
-			<label index="city">City</label>
+			<label index="streetnumber">Street / Nr.</label>
+			<label index="zipcity">ZIP / City</label>
 			<label index="email">Email</label>
 
 			<label index="created"><![CDATA[<h1>Vielen Danke!</h1><br /><p>Ihre Energie-Formel wurde angelegt!</p>]]></label>
