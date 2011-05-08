@@ -1,4 +1,5 @@
 plugin.tx_formulaenergy {
+  cssFile = fileadmin/styles/otherstyles.css
 	settings {
 		 # maximum number of posts to display at once
 		maxOnOnePage = 3
