@@ -7,8 +7,11 @@
 	<data type="array">
 		<languageKey index="default" type="array">
 			<label index="tx_formulaenergy_domain_model_formulas">Formulas</label>
+			<label index="tx_formulaenergy_domain_model_formulas.options">Options</label>
 			<label index="tx_formulaenergy_domain_model_formulas.energyformula">Energyformula</label>
 			<label index="tx_formulaenergy_domain_model_formulas.gender">Gender</label>
+			<label index="tx_formulaenergy_domain_model_formulas.gender.man">Man</label>
+			<label index="tx_formulaenergy_domain_model_formulas.gender.woman">Woman</label>
 			<label index="tx_formulaenergy_domain_model_formulas.firstname">Firstname</label>
 			<label index="tx_formulaenergy_domain_model_formulas.lastname">Lastname</label>
 			<label index="tx_formulaenergy_domain_model_formulas.companyname">Companyname</label>

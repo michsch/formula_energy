@@ -9,7 +9,9 @@ $TCA['tx_formulaenergy_domain_model_formulas'] = array(
 		'showRecordFieldList'	=> 'sys_language_uid, l10n_parent, l10n_diffsource, hide, energyformula, gender, firstname, lastname, companyname, streetnumber, zipcity, email, agbchecked, cookie, ipnumber, votes, finalvotes',
 	),
 	'types' => array(
-		'1' => array('showitem'	=> 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hide, energyformula, gender, firstname, lastname, companyname, streetnumber, zipcity, email, agbchecked, hide, cookie, ipnumber, votes, finalvotes,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
+		'1' => array('showitem'	=> 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource,  energyformula, gender, firstname, lastname, companyname, streetnumber, zipcity, email,' .
+				'--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,hide, starttime, endtime,' .
+				'--div--;LLL:EXT:formula_energy/Resources/Private/Language/locallang_db.xml:tx_formulaenergy_domain_model_formulas.options, agbchecked, cookie, ipnumber, votes, finalvotes'),
 	),
 	'palettes' => array(
 		'1' => array('showitem'	=> ''),

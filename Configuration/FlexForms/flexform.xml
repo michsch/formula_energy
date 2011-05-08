@@ -1,0 +1,44 @@
+<T3DataStructure>
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms>
+          <sheetTitle>Options</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <settings.maxOnOnePage>
+            <TCEforms>
+              <label>Max. number display at once</label>
+              <config>
+                <type>input</type>
+                <size>2</size>
+				<eval>int</eval>
+				<default>10</default>
+              </config>
+            </TCEforms>
+          </settings.maxOnOnePage>
+
+			<switchableControllerActions>
+				<TCEforms>
+				 <label>plugin action</label>
+					<config>
+						<type>select</type>
+						<items>
+							<numIndex index="0">
+								<numIndex index="0">Eingabe Formular</numIndex>
+								<numIndex index="1">Formulas->new</numIndex>
+							</numIndex>
+							<numIndex index="1">
+								<numIndex index="0">Voten</numIndex>
+								<numIndex index="1">Formulas->list</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</switchableControllerActions>
+		</el>
+      </ROOT>
+    </sDEF>
+  </sheets>
+</T3DataStructure>

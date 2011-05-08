@@ -24,6 +24,23 @@
 			<label index="tx_formulaenergy_domain_model_usercheck">Checks the user like cia</label>
 			<label index="tx_formulaenergy_domain_model_usercheck.ipnumber">Users ip number</label>
 			<label index="tx_formulaenergy_domain_model_usercheck.cookie">more cookies</label>
+
+<label index="formula">Enter your formula (max. 150 chars)</label>
+			<label index="gender">Gender</label>
+			<label index="man">Man</label>
+			<label index="woman">Woman</label>
+			<label index="firstname">Firstname</label>
+			<label index="lastname">Lastname</label>
+			<label index="companyname">Companyname</label>
+			<label index="street">Street</label>
+			<label index="housenumber">Nr.</label>
+			<label index="zip">ZIP</label>
+			<label index="city">City</label>
+			<label index="email">Email</label>
+
+			<label index="created"><![CDATA[<h1>Vielen Danke!</h1><br /><p>Ihre Energie-Formel wurde angelegt!</p>]]></label>
+			<label index="now_decide"><![CDATA[<h1>Jetzt entscheiden<h1><p>Welche Energie-Formel gefällt Ihnen besonders gut? Wählen Sie aus allen Einsendungen Ihren Favoriten! Der Gewinner erhält ein Yxyxxxyxx von Xyxyyy! Geben Sie Ihre Stimme bis zum 31.Oktober 2011!</p> ]]></label>
+
 		</languageKey>
 	</data>
 </T3locallang>

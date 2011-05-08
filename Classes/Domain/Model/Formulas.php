@@ -3,7 +3,7 @@
 *  Copyright notice
 *
 *  (c) 2011 Thorsten Mueller <info@immer-quer-durch.de>, QuerDurch
-*  	
+*
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -383,7 +383,8 @@ class Tx_FormulaEnergy_Domain_Model_Formulas extends Tx_Extbase_DomainObject_Abs
 	 * @return void
 	 */
 	public function setIpnumber($ipnumber) {
-		$this->ipnumber = $ipnumber;
+		$this->ipnumber = t3lib_div::getIndpEnv('REMOTE_ADDR');
+		//$ipnumber;
 	}
 
 	/**
